@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InfoComponent } from './info/info.component';
+import { AttributeExpoComponent } from './attribute-expo/attribute-expo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InfoComponent //components,directives and pipes
+    InfoComponent,
+    AttributeExpoComponent //components,directives and pipes
   ],
   imports: [
     BrowserModule,

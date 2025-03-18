@@ -1,0 +1,10 @@
+<div [ngStyle]="currentTheme">
+    <button class="btn btn-dark" (click)="changeTheme('theme1')" >Theme 1</button>
+    <button class="btn btn-dark" (click)="changeTheme('theme2')" >Theme 2</button>
+    <button class="btn btn-dark" (click)="changeTheme('theme3')" >Theme 3</button>
+
+    <ul>
+        <li *ngFor="let item of dataItems">{{ item }}</li>
+    </ul>
+</div>
+
