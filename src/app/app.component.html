@@ -8,6 +8,7 @@
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 </div>
 <hr/>
+
 <div class="form-group">
     <label for="alertClass">Choose an alert class:</label>
     <select id="alertClass" [(ngModel)]="current">
@@ -19,5 +20,13 @@
     </select>
 </div>
 <app-attribute-expo></app-attribute-expo>
-<app-info *ngFor="let x of quotes" [info]="x" [aclass]="current"></app-info>
+<div class="bg-dark p-3 rounded" [style.color]="'white'">
+    <h2 class="display-6">Current or last Focused Info-Box</h2>
+    <p>{{focusedbox}}</p>
+</div>
+<app-info *ngFor="let x of quotes"
+ [info]="x" 
+ [aclass]="current"
+ (senseit)="grabit($event)"
+ ></app-info>
 

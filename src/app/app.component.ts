@@ -19,4 +19,11 @@ export class AppComponent {
     "Spread love everywhere you go. Let no one ever come to you without leaving happier"
   ]
   current:string="alert alert-primary"
+  
+  focusedbox:string=""
+
+  grabit(data: string):void{
+     this.focusedbox=data
+  }
+
   }

@@ -129,3 +129,18 @@ class Child{
 }
 
 <app-box [data]="x"></app-box>
+
+@Output
+--------
+if child wants to send some data
+to parent,(its possible only upon an event)
+
+you need to declare a variable of type EventEmitter in the
+child and should declare it as @Output
+
+now the variable will behave as an output attribute
+to the child component
+
+@Output() listenme:EventEmitter<String>=new EventEmitter<String>()
+
+<app-child (listenme)="fun($event)"></app-child>
