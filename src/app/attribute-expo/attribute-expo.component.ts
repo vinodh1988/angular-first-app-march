@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AttributeExpoComponent {
   dataItems:string[]=["Furniture","Vegetables","Fruits","Goods"]
+  fontNames: string[] = [
+    "Arial", "Verdana", "Helvetica", "Tahoma", "Trebuchet MS", "Times New Roman", 
+    "Georgia", "Garamond", "Courier New", "Brush Script MT", "Impact", "Comic Sans MS", 
+    "Lucida Sans", "Lucida Console", "Palatino Linotype", "Segoe UI", "Candara", 
+    "Calibri", "Cambria", "Consolas", "Franklin Gothic Medium", "Gill Sans", 
+    "Century Gothic", "Arial Black", "Book Antiqua", "Copperplate", "Papyrus", 
+    "Perpetua", "Rockwell", "Symbol"
+  ]
+  fontname=this.fontNames[24]
   theme1:any = {
     backgroundColor: "#f0f8ff",
     fontFamily: "Arial, sans-serif",

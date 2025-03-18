@@ -91,3 +91,16 @@ here click is output attribute
 when button clicked fun() is called
 
 some inbuilt output attributes : click,hover, keyup,keydown,change,mouseover
+
+### Input Output Directives
+
+* This directive does both input and output directive job
+* It is two way bound
+* Generally enclosed within [()]
+
+example : ngModel
+
+<input type="text" [(ngModel)]="name">
+
+if name is Jack --> text box will be filled with jack
+if you type Kiran in text box --> Kiran will be stored in name
