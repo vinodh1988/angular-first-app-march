@@ -1,27 +1,44 @@
-# FirstAngularApp
+# Directives
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+Directives are custom elements or attributes
+that are created in angular that can be applied
+both inbuilt elements as well as angular components
 
-## Development server
+There are three major kinds of Directives
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Component Directives
+* Structural Directives
+* Attribute Directives
 
-## Code scaffolding
+#### Component Directives
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Custom elements are nothing but component Directives
 
-## Build
+In angular all components are component Directives
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Structural Directives
 
-## Running unit tests
+Structural Directives are applied to both inbuilt html elements
+as well as custom html elements
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Structural attributes are prefixed with letter *
 
-## Running end-to-end tests
+Structural directives 
+* Generates Templates( Generates html)
+* It hides/unhides templates
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Inbuilt Structural Directives: ngFor,ngSwitch,ngIf
 
-## Further help
+if listx:string[]=["apple","boy","cat"]
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<ul>
+   <li *ngFor="let x of listx">{{x}} </li>
+</ul>
+
+For the above examples three li are generated as listx contains three elements
+
+if valid=false
+
+<div class="data" *ngIf="valid"> </div>
+
+the above division will not be visible because valid is false
