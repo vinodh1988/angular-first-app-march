@@ -104,3 +104,28 @@ example : ngModel
 
 if name is Jack --> text box will be filled with jack
 if you type Kiran in text box --> Kiran will be stored in name
+
+### Parent Child Communication
+
+Decorators @Input and @Output
+----------------------------
+
+@Input
+---------
+
+If a child component wants to receive data from the parent
+the child component needs to declare a variable and decorate it
+wit @Input
+
+if you do like this the variable will behave like input attribute
+for child component
+@Component(
+    {
+        selector:'app-box'
+    }
+)
+class Child{
+  Input()  data:String=""
+}
+
+<app-box [data]="x"></app-box>
